@@ -19,12 +19,13 @@ body{
 .buttonbox{
     display: flex;
     flex-direction: column;
-    width:31rem;
+    width:25rem;
     height:40rem;
     border-radius: 25px;
     background-color: #111e28;
     align-items: center;
     box-shadow: 2px 2px 1px rgb(32, 32, 32);
+    
 
 }
 .screen{
@@ -47,6 +48,8 @@ body{
     flex-wrap: wrap;
     width: 70%;
     height:80%;
+    min-width: 24em;
+    
     margin-top: 30px;
 
     align-items:center;
