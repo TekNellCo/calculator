@@ -24,21 +24,20 @@ body{
     border-radius: 25px;
     background-color: #111e28;
     align-items: center;
+    box-shadow: 2px 2px 1px rgb(32, 32, 32);
 
 }
 .screen{
     border-radius: 25px;
     background-color: #111e28;;
-    height: 8em;
-    width: 25em;
-    max-width: 12em;
-    max-height: 7rem;
-    font-size: 30px;
-    color:rgb(176, 176, 176);
+    border: none;
     text-align: end;
-    margin-top: 20px;
-    
-
+    width: 25em;
+    max-width: 9em;
+    max-height: 7rem;
+    font-size: 40px;
+    color:#606060;
+    margin-top: 90px;
 }
 .keys{
 
@@ -48,11 +47,12 @@ body{
     flex-wrap: wrap;
     width: 70%;
     height:80%;
-    margin-top:auto;
+    margin-top: 30px;
+
     align-items:center;
     justify-content: center;
     align-content: center;
-    margin:30px ;
+
     gap:1em;
 }
 button{
@@ -74,6 +74,16 @@ button{
 
 }
 .button.zero{
-    min-width: 6em;
+    min-width: 4.5em;
+}
+.button.operator{
+    background-color: #005db2;
+}
+button.equal{
+    background-color: #047dee;
+    min-width: 4.5em;
+}
 
+.clear, .back{
+    background-color: #464646;
 }
