@@ -12,6 +12,8 @@ body{
 .calculator{
     display:flex ;
     flex-direction: column;
+    
+    
 }
 
 .buttonbox{
@@ -19,20 +21,29 @@ body{
     flex-direction: column;
     width:31rem;
     height:40rem;
-    border: 2px solid blue;
+    border-radius: 25px;
+    background-color: #111e28;
     align-items: center;
 
 }
 .screen{
-    border:2px solid black;
+    border-radius: 25px;
+    background-color: #111e28;;
     height: 8em;
     width: 25em;
-    margin-top: auto;
+    max-width: 12em;
+    max-height: 7rem;
+    font-size: 30px;
+    color:rgb(176, 176, 176);
+    text-align: end;
+    margin-top: 20px;
     
 
 }
 .keys{
-    border:2px solid green;
+
+    background-color: #111e28;
+    border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
     width: 70%;
@@ -41,13 +52,28 @@ body{
     align-items:center;
     justify-content: center;
     align-content: center;
+    margin:30px ;
     gap:1em;
 }
 button{
-    border:2px solid red;
+
     height:14%;
     width:20%;
+    max-width: 50em;
+    max-height: 50em;
+    font-weight: 500;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    max-height:14%px;
+    cursor: pointer;
+    color:#0ca5eb;
+    background-color: #303136;
+    border: none;
+    border-radius: 19px;
+
 }
 .button.zero{
-    min-width:11em;
+    min-width: 6em;
+
 }
