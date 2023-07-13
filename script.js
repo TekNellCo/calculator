@@ -32,7 +32,6 @@ equal.addEventListener('click',(e)=>{
 });
 
 clear.addEventListener('click',()=>{
-    audio.cloneNode().play();
     screen.value= '';
 });
 
