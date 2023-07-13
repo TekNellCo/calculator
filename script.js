@@ -8,7 +8,7 @@ const back = document.querySelector('.back');
 const plusminus =document.querySelector('.plusminus');
 const operator =document.querySelector('.operator');
 
-const audio = new Audio('/sounds/click.mp3')
+const audio = new Audio('sounds/click.mp3')
 
 plusminus.addEventListener('click',()=>{ audio.cloneNode().play();screen.value == screen.value ? screen.value = -screen.value : screen.value; });
 

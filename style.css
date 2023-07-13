@@ -1,92 +1,60 @@
-*,*::before,*::after{
+*,*:before,*::after{
+    padding:0;
+    margin:0;
     box-sizing: border-box;
-    margin:0px;
-    padding:0px;
 }
 body{
     display: flex;
-    justify-content: center;
-    margin-top: 20vh;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
 
 }
 .calculator{
-    display:flex ;
-    flex-direction: column;
-    
-    
-}
-
-.buttonbox{
-    display: flex;
-    flex-direction: column;
-    width:25rem;
-    height:40rem;
+    background-color: pink;
     border-radius: 25px;
-    background-color: #111e28;
-    align-items: center;
-    box-shadow: 2px 2px 1px rgb(32, 32, 32);
-    
-
+    padding:2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    max-width: 25em;
+    min-width: 25em;
+    gap: 1em;
+    min-height: 35em;
+    box-shadow: 0px 0px 5px rgb(54, 54, 54);
+    position:relative;
 }
 .screen{
-    border-radius: 25px;
-    background-color: #111e28;;
-    border: none;
     text-align: end;
-    width: 25em;
-    max-width: 9em;
-    max-height: 7rem;
-    font-size: 40px;
-    color:#606060;
-    margin-top: 90px;
+    grid-row: 1/4;
+    grid-column:1/5;
+    font-size: 3.2em ;
+    color: #21a4a2;
 }
-.keys{
-
-    background-color: #111e28;
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    height:80%;
-    min-width: 24em;
-    
-    margin-top: 30px;
-
-    align-items:center;
-    justify-content: center;
-    align-content: center;
-
-    gap:1em;
+.equal{
+    grid-row: 7/9;
+    grid-column: 4/5;
 }
-button{
-
-    height:14%;
-    width:20%;
-    max-width: 50em;
-    max-height: 50em;
-    font-weight: 500;
-    font-size: 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    max-height:14%px;
-    cursor: pointer;
-    color:#0ca5eb;
-    background-color: #303136;
+button, input{
+    border-radius: 15px;
     border: none;
-    border-radius: 19px;
+    box-shadow: 0px 0px 9px rgb(208, 157, 166);
+    background-color: rgb(255, 246, 248);
+    color:#21a4a2;
+    font-size: 14px;
+}
+button:active{
+    box-shadow:0 0 0;
+}
+.equal{
+    background-color: #21a4a2;
+    color: white;
+    font-size: 19px;
+}
+.operator{
+    background-color: rgb(255, 213, 220);
+    color: white;
+    font-size: 19px;
 
-}
-.button.zero{
-    min-width: 4.5em;
-}
-.button.operator{
-    background-color: #005db2;
-}
-button.equal{
-    background-color: #047dee;
-    min-width: 4.5em;
-}
-
-.clear, .back{
-    background-color: #464646;
 }
